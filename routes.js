@@ -8,9 +8,9 @@ router.post('/certificates', CertificatesControllers.save )
 router.post('/certificates/:id/remove', CertificatesControllers.remove )
 
 const  ReferencesControllers = require('./controllers/references')
-router.get('/references',)
-router.post('/references',)
-router.post('/references/:id/remove',)
+router.get('/references', ReferencesControllers.showAll)
+router.post('/references', ReferencesControllers.save)
+router.post('/references/:id/remove', ReferencesControllers.remove)
 
 
 
